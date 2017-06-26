@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Left</title>
+    <style>
+        h1 {
+            font-family: "Segoe UI";
+            font-size: 370px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="timeLeft()">
+    <h1 id="time_left_days">NaN</h1>
+    <script src="countdown.min.js"></script>
+    <script>
+        function timeLeft() {
+            var time = countdown(new Date(2017, 08, 12), null, countdown.DAYS ).toString();
+            document.getElementById("time_left_days").innerHTML = time;
+        }
+    </script>
+</body>
+</html>
