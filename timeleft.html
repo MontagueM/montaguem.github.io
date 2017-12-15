@@ -13,19 +13,19 @@
 </head>
 <body onload="timeLeft()">
     <h1 id="time_left_days">NaN</h1>
-    <h1 id="time_since_days">NaN</h1>
+    <h1 id="time_from_days">NaN</h1>
     <h1 id="percentage">NaN%</h1>
     <script src="moment.js"></script>
     <script>
         function timeLeft() {
-            var fromDate = moment([2017, 05, 20]);
-            var toDate = moment([2017, 08, 11]);
+            var fromDate = moment([2017, 08, 11]);
+            var toDate = moment([2018, 06, 13]);
             var now = moment();
             var left = toDate.diff(now, 'days');
             var since = now.diff(fromDate, 'days');
             var percentage = (since/(left+since))*100;
             document.getElementById("time_left_days").innerHTML = left + " days until";
-            document.getElementById("time_since_days").innerHTML = since + " days lost";
+            document.getElementById("time_from_days").innerHTML = since + " days from";
             document.getElementById("percentage").innerHTML = Math.round(percentage) + "% gone";
         }
     </script>
