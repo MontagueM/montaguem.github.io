@@ -13,11 +13,11 @@
 	$VISION_API_KEY = "ENTER YOUR API KEY HERE";
 
 	// Keys for Google Custom Search URLs
-	$GCSE_API_KEY = "ENTER YOUR API KEY HERE";
-	$GCSE_SEARCH_ENGINE_ID = "ENTER YOUR SEARCH ENGINE ID HERE";
+	$GCSE_API_KEY = "AIzaSyDdurtpvEba9__-QzQwXicOd3f8PPe0-N4";
+	$GCSE_SEARCH_ENGINE_ID = "011126453414886573763:juxlrhoapps";
 
 	// URL of hosted script
-	$HOST_URL = "www.url.com/screenshot.png";
+	$HOST_URL = "monteven.me/hq.php";
 
 
 	//DETECT TEXT WITH JSON REQUEST TO GOOGLE
