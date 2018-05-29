@@ -119,8 +119,8 @@
 
 // ------------------- ATTEMPT 1: GOOGLE QUESTION -------------------
 	$query1 = $question . "?";
-	$url1 = "https://www.googleapis.com/customsearch/v1?key=" . $GCSE_API_KEY . "&cx=" . $GCSE_SEARCH_ENGINE_ID . "&q=" . urlencode($query1);
-
+	//$url1 = "https://www.googleapis.com/customsearch/v1?key=" . $GCSE_API_KEY . "&cx=" . $GCSE_SEARCH_ENGINE_ID . "&q=" . urlencode($query1);
+	$url1 = "https://cse.google.co.uk/cse/publicurl?cx=011126453414886573763:juxlrhoapps&q=" . urlencode($query1);
 	// Send request googling question
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url1);
