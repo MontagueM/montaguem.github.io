@@ -10,7 +10,7 @@
 	}
 
 	// Key for Google Vision API
-	$VISION_API_KEY = "ENTER YOUR API KEY HERE";
+	$VISION_API_KEY = "AIzaSyA6czAdm9fVqjKjAvEBow77tLmjjvfNxgQ";
 
 	// Keys for Google Custom Search URLs
 	$GCSE_API_KEY = "AIzaSyDdurtpvEba9__-QzQwXicOd3f8PPe0-N4";
