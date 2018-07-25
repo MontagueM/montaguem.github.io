@@ -10,14 +10,14 @@
 	}
 
 	// Key for Google Vision API
-	$VISION_API_KEY = "ENTER YOUR API KEY HERE";
+	$VISION_API_KEY = "291a93c12b39ef090bc0d3053f3251dbb71fedec";
 
 	// Keys for Google Custom Search URLs
-	$GCSE_API_KEY = "ENTER YOUR API KEY HERE";
-	$GCSE_SEARCH_ENGINE_ID = "ENTER YOUR SEARCH ENGINE ID HERE";
+	$GCSE_API_KEY = "AIzaSyDdurtpvEba9__-QzQwXicOd3f8PPe0-N4";
+	$GCSE_SEARCH_ENGINE_ID = "011126453414886573763:juxlrhoapps";
 
 	// URL of hosted script
-	$HOST_URL = "www.url.com/screenshot.png";
+	$HOST_URL = "monteven.me/hq.php";
 
 
 	//DETECT TEXT WITH JSON REQUEST TO GOOGLE
@@ -119,8 +119,8 @@
 
 // ------------------- ATTEMPT 1: GOOGLE QUESTION -------------------
 	$query1 = $question . "?";
-	$url1 = "https://www.googleapis.com/customsearch/v1?key=" . $GCSE_API_KEY . "&cx=" . $GCSE_SEARCH_ENGINE_ID . "&q=" . urlencode($query1);
-
+	//$url1 = "https://www.googleapis.com/customsearch/v1?key=" . $GCSE_API_KEY . "&cx=" . $GCSE_SEARCH_ENGINE_ID . "&q=" . urlencode($query1);
+	$url1 = "https://cse.google.co.uk/cse/publicurl?cx=011126453414886573763:juxlrhoapps&q=" . urlencode($query1);
 	// Send request googling question
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url1);
